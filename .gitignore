@@ -1,0 +1,4 @@
+*.pem
+.env
+.aws/
+credentials
