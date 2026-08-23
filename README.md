@@ -143,3 +143,12 @@ aws ec2 reboot-instances --instance-ids <INSTANCE_ID> --region ap-northeast-1
 * The private `.pem` key is never stored in this repository.
 * AWS credentials and secrets are not committed to Git.
 * Root AWS credentials are not used for daily operations.
+
+## Sceenshots
+
+## EC2 Instance Running
+![Nginx Running](screenshots/01-nginx-runnning.png)
+![Website](screenshots/02-website.png)
+![EC2 Running](screenshots/03-ec2-running.png)
+
+
