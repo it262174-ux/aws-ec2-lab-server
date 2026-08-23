@@ -151,4 +151,14 @@ aws ec2 reboot-instances --instance-ids <INSTANCE_ID> --region ap-northeast-1
 ![Website](screenshots/02-website.png)
 ![EC2 Running](screenshots/03-ec2-running.png)
 
+## Architecture
 
+```mermaid
+flowchart TD
+    A[Internet User] -->|HTTP Port 80| B[Security Group]
+    C[My Laptop / VS Code] -->|SSH Port 22 - My IP Only| B
+    B --> D[EC2 t3.micro]
+    D --> E[Ubuntu Linux]
+    E --> F[Nginx Web Server]
+    F --> G[index.html]
+```
